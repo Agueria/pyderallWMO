@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Automating text shortcuts on WhatsApp Web ;)</title>
+    <style>
+      body {
+        width: 600px;
+        background: linear-gradient(to bottom, #ffcc00, #ff9999);
+        padding: 20px;
+        font-family: Arial, sans-serif;
+      }
+      .logo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+      .logo img {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        transform: translateZ(0);
+        transition: transform 0.3s ease-out;
+        background-color: black;
+      }
+
+      .logo img:hover {
+        transform: scale(1.1) rotate(5deg);
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      h1 {
+        text-align: center;
+      }
+      input,
+      textarea {
+        width: 100%;
+        margin-bottom: 8px;
+        padding: 8px;
+      }
+      button {
+        width: 100%;
+        padding: 10px;
+        cursor: pointer;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logo">
+      <img src="icon48.png" alt="Logo" />
+    </div>
+    <h1>Automating text shortcuts on WhatsApp Web ;)</h1>
+    <button id="save">Save</button>
+    <div id="shortcuts">
+      <div class="container">
+        <input type="text" id="shortcut1" placeholder="Shortcut 1" />
+        <textarea
+          id="message1"
+          rows="4"
+          placeholder="Text you want to copy 1"
+        ></textarea>
+      </div>
+      <div class="container">
+        <input type="text" id="shortcut2" placeholder="Shortcut 2" />
+        <textarea
+          id="message2"
+          rows="4"
+          placeholder="Text you want to copy 2"
+        ></textarea>
+      </div>
+      <div class="container">
+        <input type="text" id="shortcut3" placeholder="Shortcut 3" />
+        <textarea
+          id="message3"
+          rows="4"
+          placeholder="Text you want to copy 3"
+        ></textarea>
+      </div>
+      <div class="container">
+        <input type="text" id="shortcut4" placeholder="Shortcut 4" />
+        <textarea
+          id="message4"
+          rows="4"
+          placeholder="Text you want to copy 4"
+        ></textarea>
+      </div>
+      <div class="container">
+        <input type="text" id="shortcut5" placeholder="Shortcut 5" />
+        <textarea
+          id="message5"
+          rows="4"
+          placeholder="Text you want to copy 5"
+        ></textarea>
+      </div>
+      <div class="container">
+        <input type="text" id="shortcut6" placeholder="Shortcut 6" />
+        <textarea
+          id="message6"
+          rows="4"
+          placeholder="Text you want to copy 6"
+        ></textarea>
+      </div>
+      <div class="container">
+        <input type="text" id="shortcut7" placeholder="Shortcut 7" />
+        <textarea
+          id="message7"
+          rows="4"
+          placeholder="Text you want to copy 7"
+        ></textarea>
+      </div>
+      <div class="container">
+        <input type="text" id="shortcut8" placeholder="Shortcut 8" />
+        <textarea
+          id="message8"
+          rows="4"
+          placeholder="Text you want to copy 8"
+        ></textarea>
+      </div>
+      <div class="container">
+        <input type="text" id="shortcut9" placeholder="Shortcut 9" />
+        <textarea
+          id="message9"
+          rows="4"
+          placeholder="Text you want to copy 9"
+        ></textarea>
+      </div>
+      <div class="container">
+        <input type="text" id="shortcut10" placeholder="Shortcut 10" />
+        <textarea
+          id="message10"
+          rows="4"
+          placeholder="Text you want to copy 10"
+        ></textarea>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

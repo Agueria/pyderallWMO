@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Pyderall",
+  "version": "1.0",
+  "description": "An extension for automating text shortcuts on WhatsApp Web",
+  "permissions": ["scripting", "activeTab", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": "icon48.png",
+    "default_title": "Pyderall",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://web.whatsapp.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "host_permissions": [
+    "https://web.whatsapp.com/"
+  ]
+}
